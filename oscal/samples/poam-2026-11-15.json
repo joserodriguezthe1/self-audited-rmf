@@ -1,0 +1,2183 @@
+{
+  "plan-of-action-and-milestones": {
+    "uuid": "e2b6c70a-7247-4f26-8df8-87d5e9885b61",
+    "metadata": {
+      "title": "Self-Audited System (SAS) plan of action and milestones",
+      "last-modified": "2026-11-15T17:30:52+00:00",
+      "version": "2026-11-15T173048Z",
+      "oscal-version": "1.1.3"
+    },
+    "system-id": {
+      "identifier-type": "https://ietf.org/rfc/rfc4122",
+      "id": "5b249a6f-5d35-57eb-bff6-3389d5cc7830"
+    },
+    "poam-items": [
+      {
+        "uuid": "6caae2d2-942a-518e-8256-8f847b923420",
+        "title": "AC-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ac-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "6c59d0ee-6485-4e14-87d8-9b4f45cac1eb"
+          }
+        ]
+      },
+      {
+        "uuid": "4b38f153-4367-5a52-b479-6c84f896dc87",
+        "title": "AC-17(2) Protection of Confidentiality and Integrity Using Encryption",
+        "description": "16 passed, 1 failed, 0 risk-accepted of 17 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ac-17.2"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "16173414-b13e-4cb7-a9dc-b18c1acab876"
+          }
+        ],
+        "remarks": "CloudFront.7 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID"
+      },
+      {
+        "uuid": "c84ea132-0b2b-588b-9fad-d27d6cde9b05",
+        "title": "AC-2 Account Management",
+        "description": "44 passed, 0 failed, 0 risk-accepted of 44 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ac-2"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "c6f627a4-bc5b-4ce6-99c9-a08aac2aa0b7"
+          }
+        ]
+      },
+      {
+        "uuid": "ad191ecd-2ba3-5bec-9293-da6b57ac22d2",
+        "title": "AC-2(1) Automated System Account Management",
+        "description": "67 passed, 1 failed, 0 risk-accepted of 68 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ac-2.1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "5a7b7028-4542-448b-a1cb-73aae0953236"
+          }
+        ],
+        "remarks": "IAM.6 on AWS::::Account:111122223333"
+      },
+      {
+        "uuid": "c475a316-cb2e-5404-94e6-adf733897551",
+        "title": "AC-2(3) Disable Accounts",
+        "description": "3 passed, 0 failed, 0 risk-accepted of 3 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ac-2.3"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "68b06428-0bee-451b-b970-44099d41f866"
+          }
+        ]
+      },
+      {
+        "uuid": "f1093ac2-2dde-58d8-b580-95b7613a1b90",
+        "title": "AC-2(4) Automated Audit Actions",
+        "description": "26 passed, 1 failed, 1 risk-accepted of 28 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ac-2.4"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "96fdb049-a46b-4d5e-bc86-6eb71b7ae3ae"
+          }
+        ],
+        "remarks": "CloudFront.5 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID"
+      },
+      {
+        "uuid": "201e3ec3-1de6-57d1-b31a-0030f9dbf3e5",
+        "title": "AC-21 Information Sharing",
+        "description": "44 passed, 0 failed, 3 risk-accepted of 47 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ac-21"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2a27d4ac-e434-4c77-ad3a-103853396e83"
+          }
+        ]
+      },
+      {
+        "uuid": "ff46d674-07df-556d-9bf6-fec688f8d058",
+        "title": "AC-3 Access Enforcement",
+        "description": "109 passed, 0 failed, 3 risk-accepted of 112 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ac-3"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "de725424-9e88-40cb-9292-0d1738320340"
+          }
+        ]
+      },
+      {
+        "uuid": "dd12f104-eaa2-5be4-af21-4ceb4c5f0102",
+        "title": "AC-4 Information Flow Enforcement",
+        "description": "74 passed, 1 failed, 3 risk-accepted of 78 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ac-4"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "df495676-324f-496a-bef5-b95a7a26248d"
+          }
+        ],
+        "remarks": "CloudFront.7 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID"
+      },
+      {
+        "uuid": "debf90f2-fc2c-5238-977b-e44ad71c1e53",
+        "title": "AC-6 Least Privilege",
+        "description": "107 passed, 0 failed, 3 risk-accepted of 110 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ac-6"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "4db509a4-fdff-4cfa-8edd-25c4e6a397e6"
+          }
+        ]
+      },
+      {
+        "uuid": "f33233d8-2416-5ded-9aa3-49b47de4e1eb",
+        "title": "AC-6(9) Log Use of Privileged Functions",
+        "description": "26 passed, 1 failed, 1 risk-accepted of 28 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ac-6.9"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "bd8a7e2b-f69e-484a-9aeb-163b9c8a8db2"
+          }
+        ],
+        "remarks": "CloudFront.5 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID"
+      },
+      {
+        "uuid": "6cab9cda-1992-5532-903a-cb2268da0511",
+        "title": "AT-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "at-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "bdbdf652-d0cf-416d-a228-6fe12e0cc8c0"
+          }
+        ]
+      },
+      {
+        "uuid": "53e25872-c2fb-542b-9157-78d37d2e0918",
+        "title": "AU-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "au-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "22c1b7c4-f09d-4f6e-a90b-965260d34d18"
+          }
+        ]
+      },
+      {
+        "uuid": "657da86e-8207-5308-b7b7-9f34cee02afc",
+        "title": "AU-12 Audit Record Generation",
+        "description": "35 passed, 2 failed, 1 risk-accepted of 39 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "au-12"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "4a2eb1ff-ca84-4698-a659-b02e97c3b057"
+          }
+        ],
+        "remarks": "CloudFront.5 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID; WAF.11 on arn:aws:wafv2:us-east-1:111122223333:global/webacl/CreatedByCloudFront-d9d24eee/6c9907d4-c984-4f67-a12b-c36ef6a24d15"
+      },
+      {
+        "uuid": "26ab915a-b74d-5920-8760-bd24cc0acdee",
+        "title": "AU-2 Event Logging",
+        "description": "35 passed, 2 failed, 1 risk-accepted of 39 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "au-2"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "b379a242-c6c5-4298-a6e9-cc8768a698af"
+          }
+        ],
+        "remarks": "CloudFront.5 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID; WAF.11 on arn:aws:wafv2:us-east-1:111122223333:global/webacl/CreatedByCloudFront-d9d24eee/6c9907d4-c984-4f67-a12b-c36ef6a24d15"
+      },
+      {
+        "uuid": "b4d96d07-f0d4-511c-b0b9-20cbc0c3836e",
+        "title": "AU-3 Content of Audit Records",
+        "description": "36 passed, 2 failed, 1 risk-accepted of 40 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "au-3"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "8ec5e6b7-3a06-4d01-ad23-9521ac238e88"
+          }
+        ],
+        "remarks": "CloudFront.5 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID; WAF.11 on arn:aws:wafv2:us-east-1:111122223333:global/webacl/CreatedByCloudFront-d9d24eee/6c9907d4-c984-4f67-a12b-c36ef6a24d15"
+      },
+      {
+        "uuid": "4cbc25cd-da64-58d8-84ba-99dfc42c5a21",
+        "title": "AU-6(1) Automated Process Integration",
+        "description": "4 passed, 1 failed, 0 risk-accepted of 5 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "au-6.1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "abbdd5ae-f713-47de-a8ce-773ba7a6d349"
+          }
+        ],
+        "remarks": "GuardDuty.1 on AWS::::Account:111122223333"
+      },
+      {
+        "uuid": "6c32981c-f8fa-5c2a-a6b4-b0fea59d3573",
+        "title": "AU-6(3) Correlate Audit Record Repositories",
+        "description": "42 passed, 2 failed, 1 risk-accepted of 46 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "au-6.3"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "49f273d8-2f2c-45b4-baff-e673ff3bd857"
+          }
+        ],
+        "remarks": "CloudFront.5 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID; WAF.11 on arn:aws:wafv2:us-east-1:111122223333:global/webacl/CreatedByCloudFront-d9d24eee/6c9907d4-c984-4f67-a12b-c36ef6a24d15"
+      },
+      {
+        "uuid": "3a5b456e-c526-58fd-b2d1-dc62db7985d7",
+        "title": "AU-9 Protection of Audit Information",
+        "description": "16 passed, 0 failed, 1 risk-accepted of 17 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "au-9"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "e1454237-78f9-4382-97df-9b1fd3db425b"
+          }
+        ]
+      },
+      {
+        "uuid": "997ad1c5-94f9-5314-813b-576ddb35165e",
+        "title": "CA-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ca-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "93496df0-fce3-4262-beb0-7cc42a5dce3a"
+          }
+        ]
+      },
+      {
+        "uuid": "e67ca328-d6fa-5b52-ae13-eba47fd20162",
+        "title": "CA-7 Continuous Monitoring",
+        "description": "57 passed, 8 failed, 2 risk-accepted of 68 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ca-7"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "f1f1c8dd-9cc9-44bf-b4d9-8031d2fe9724"
+          }
+        ],
+        "remarks": "CloudFront.5 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID; S3.11 on arn:aws:s3:::sas-web-111122223333; S3.11 on arn:aws:s3:::sas-evidence-111122223333; S3.11 on arn:aws:s3:::sas-accesslogs-111122223333; GuardDuty.1 on AWS::::Account:111122223333; WAF.11 on arn:aws:wafv2:us-east-1:111122223333:global/webacl/CreatedByCloudFront-d9d24eee/6c9907d4-c984-4f67-a12b-c36ef6a24d15; S3.11 on arn:aws:s3:::sas-data-111122223333; S3.11 on arn:aws:s3:::sas-logs-111122223333"
+      },
+      {
+        "uuid": "ead55a94-fa86-5198-b078-d5e5933f3c36",
+        "title": "CM-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "cm-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "96839bbc-4be0-43eb-8236-fc6f35ad59c4"
+          }
+        ]
+      },
+      {
+        "uuid": "61ab28ae-27b5-56e0-88e7-e0142d37f5c6",
+        "title": "CM-2 Baseline Configuration",
+        "description": "57 passed, 1 failed, 1 risk-accepted of 59 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "cm-2"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "6a90178b-ae8a-484c-977b-6481f95ba189"
+          }
+        ],
+        "remarks": "CloudFront.8 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID"
+      },
+      {
+        "uuid": "4efd7408-a026-5b38-85ac-3910c298998f",
+        "title": "CM-2(2) Automation Support for Accuracy and Currency",
+        "description": "27 passed, 0 failed, 0 risk-accepted of 27 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "cm-2.2"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "5aa0c822-d778-4640-b462-5699b2729520"
+          }
+        ]
+      },
+      {
+        "uuid": "2c01979c-f98f-57d0-a86e-f6f19a8e86f7",
+        "title": "CM-3 Configuration Change Control",
+        "description": "10 passed, 0 failed, 0 risk-accepted of 10 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "cm-3"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "6d08f60e-ecf6-43dd-81cb-fb70be35d81c"
+          }
+        ]
+      },
+      {
+        "uuid": "48315452-9e63-59f5-add7-41926143eac0",
+        "title": "CM-8 System Component Inventory",
+        "description": "5 passed, 0 failed, 0 risk-accepted of 5 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "cm-8"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "6863bacc-2c93-42f1-ad26-67f1e9c65785"
+          }
+        ]
+      },
+      {
+        "uuid": "14bde043-254c-504f-b8b0-90f7c839c54c",
+        "title": "CM-8(3) Automated Unauthorized Component Detection",
+        "description": "3 passed, 1 failed, 0 risk-accepted of 4 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "cm-8.3"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "a7dff83f-dc29-4486-b150-5861ddb91539"
+          }
+        ],
+        "remarks": "GuardDuty.1 on AWS::::Account:111122223333"
+      },
+      {
+        "uuid": "aaf63733-5556-58c5-a80f-b746703ea8f6",
+        "title": "CP-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "cp-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "adcd5c20-14ce-4acc-bd0a-85d3b55ba364"
+          }
+        ]
+      },
+      {
+        "uuid": "579d6e19-f165-5dbd-a69a-29f2564f77e6",
+        "title": "CP-10 System Recovery and Reconstitution",
+        "description": "49 passed, 1 failed, 5 risk-accepted of 55 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "cp-10"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "b6eace96-ae01-4e2c-87ee-bddd56ff6b41"
+          }
+        ],
+        "remarks": "CloudFront.4 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID"
+      },
+      {
+        "uuid": "66cdd8b4-0b50-55cb-8db9-0f5575884a19",
+        "title": "CP-6 Alternate Storage Site",
+        "description": "14 passed, 0 failed, 5 risk-accepted of 19 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "cp-6"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "24915301-4ad8-410f-a380-f7f5d3afce45"
+          }
+        ]
+      },
+      {
+        "uuid": "e2bdebb0-1e29-5227-b0d9-4e598f749506",
+        "title": "CP-6(1) Separation from Primary Site",
+        "description": "14 passed, 0 failed, 5 risk-accepted of 19 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "cp-6.1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "15a1f7cd-9847-4b5b-b08a-d39567c51730"
+          }
+        ]
+      },
+      {
+        "uuid": "2eb66a36-4034-5cc5-a164-dbb290d26b58",
+        "title": "CP-9 System Backup",
+        "description": "28 passed, 0 failed, 5 risk-accepted of 33 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "cp-9"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "12021585-d3c5-44df-b953-cd30c3b41762"
+          }
+        ]
+      },
+      {
+        "uuid": "5d8501dd-0933-5d06-9817-0a7e48b2e47b",
+        "title": "IA-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ia-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "4eccde9e-1fd8-4e0c-9ef2-1037938812aa"
+          }
+        ]
+      },
+      {
+        "uuid": "b3bd14ba-7b31-561a-b0dd-9d3c08ba9946",
+        "title": "IA-2(1) Multi-factor Authentication to Privileged Accounts",
+        "description": "3 passed, 1 failed, 0 risk-accepted of 4 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ia-2.1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "b38d5abf-14b2-4a0a-bf13-2ecf309e7a02"
+          }
+        ],
+        "remarks": "IAM.6 on AWS::::Account:111122223333"
+      },
+      {
+        "uuid": "e34c8a8a-65ae-547e-81a7-3eb672cf4c1e",
+        "title": "IA-2(2) Multi-factor Authentication to Non-privileged Accounts",
+        "description": "3 passed, 1 failed, 0 risk-accepted of 4 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ia-2.2"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "63ee921e-2f41-4732-a71d-7eb423a86185"
+          }
+        ],
+        "remarks": "IAM.6 on AWS::::Account:111122223333"
+      },
+      {
+        "uuid": "4810d3f4-9a67-5736-9fa8-25ed78535727",
+        "title": "IA-2(8) Access to Accounts \u2014 Replay Resistant",
+        "description": "3 passed, 1 failed, 0 risk-accepted of 4 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ia-2.8"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "17bc7789-e899-4aaf-b300-f4c8461def25"
+          }
+        ],
+        "remarks": "IAM.6 on AWS::::Account:111122223333"
+      },
+      {
+        "uuid": "89638603-3d9c-5f33-8761-07ebcafe09c9",
+        "title": "IA-5(1) Password-based Authentication",
+        "description": "17 passed, 1 failed, 0 risk-accepted of 18 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ia-5.1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "f6bd8589-d9b1-4ec9-ac41-720c48164147"
+          }
+        ],
+        "remarks": "CloudFront.7 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID"
+      },
+      {
+        "uuid": "69492ea3-8f5d-51ed-a11b-d0773a324ece",
+        "title": "IR-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ir-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "a784266d-8b59-45cc-b248-1bf91c9d7f09"
+          }
+        ]
+      },
+      {
+        "uuid": "48bf48f3-cf57-5411-b111-ea38f6b88e43",
+        "title": "MA-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ma-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "7e3cb923-2425-466a-8532-218651d4b845"
+          }
+        ]
+      },
+      {
+        "uuid": "56f91783-f463-57bb-aa80-eac754e22964",
+        "title": "MP-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "mp-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "80672979-f891-40bf-bfb2-b283179f7242"
+          }
+        ]
+      },
+      {
+        "uuid": "6eda7e17-3b07-5f36-ad00-fe4a7262c2b6",
+        "title": "PE-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "pe-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "dba05c9a-2a6a-476c-a7ae-8f31edeb5dbb"
+          }
+        ]
+      },
+      {
+        "uuid": "6768f9ed-d981-5f18-a847-2f86abf941f4",
+        "title": "PL-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "pl-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "e07258fc-bdb5-442d-b99d-f8e07d998eff"
+          }
+        ]
+      },
+      {
+        "uuid": "b6c2439b-672c-5e80-98b3-e1f8312fbbc7",
+        "title": "PS-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ps-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "cbc637d3-1e7b-4364-8f09-cfd5d0fb0953"
+          }
+        ]
+      },
+      {
+        "uuid": "4904f328-0bba-5b78-905d-16ea7edd07ee",
+        "title": "RA-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ra-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "a447ec1c-5c05-4405-9306-e057e313e744"
+          }
+        ]
+      },
+      {
+        "uuid": "432b78d4-19f9-5531-a4d7-b1e60fd5ad69",
+        "title": "RA-5 Vulnerability Monitoring and Scanning",
+        "description": "2 passed, 0 failed, 1 risk-accepted of 3 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "ra-5"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "b4b4f9fe-44f5-4ee1-86e3-f5115bd8593f"
+          }
+        ]
+      },
+      {
+        "uuid": "515dcb0c-e4d1-51fe-b155-7b7282a857b7",
+        "title": "SA-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "sa-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "52158571-f3c2-449a-ac2a-e04bab87f52b"
+          }
+        ]
+      },
+      {
+        "uuid": "794c3e32-7811-5cda-bdf5-68738f20fafd",
+        "title": "SC-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "sc-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "4dc41268-4ac5-4ffa-bbb4-24e502528d82"
+          }
+        ]
+      },
+      {
+        "uuid": "6d675204-ea52-5765-8147-04773da198d5",
+        "title": "SC-13 Cryptographic Protection",
+        "description": "58 passed, 1 failed, 1 risk-accepted of 60 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "sc-13"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "0aa35860-6475-45ff-b320-5e2d5e5e45ed"
+          }
+        ],
+        "remarks": "CloudFront.7 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID"
+      },
+      {
+        "uuid": "1cae7c5e-e3a5-57b9-b7a8-df698d15c54f",
+        "title": "SC-23 Session Authenticity",
+        "description": "23 passed, 1 failed, 0 risk-accepted of 24 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "sc-23"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "7a5c00bb-4340-4687-a09f-b04e682b0da3"
+          }
+        ],
+        "remarks": "CloudFront.7 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID"
+      },
+      {
+        "uuid": "b0444329-5c42-57d0-8657-7a4af7a9f669",
+        "title": "SC-28 Protection of Information at Rest",
+        "description": "34 passed, 0 failed, 1 risk-accepted of 35 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "sc-28"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "983d9d41-7311-4067-8566-4cd77408d5e9"
+          }
+        ]
+      },
+      {
+        "uuid": "e9ffc09b-aac3-5b96-88a4-48781b95913f",
+        "title": "SC-28(1) Cryptographic Protection",
+        "description": "33 passed, 0 failed, 1 risk-accepted of 34 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "sc-28.1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "de075b49-42ec-45c9-b783-67a61d835df3"
+          }
+        ]
+      },
+      {
+        "uuid": "e902de50-b517-5e93-af90-8a739a7a58f3",
+        "title": "SC-5 Denial-of-service Protection",
+        "description": "2 passed, 1 failed, 0 risk-accepted of 3 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "sc-5"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "a87d624a-51af-4a0b-8c63-6a2cfbac9d87"
+          }
+        ],
+        "remarks": "GuardDuty.1 on AWS::::Account:111122223333"
+      },
+      {
+        "uuid": "3c4fbf52-42b9-5bb9-9949-4bd1ab7697ed",
+        "title": "SC-7 Boundary Protection",
+        "description": "58 passed, 0 failed, 3 risk-accepted of 61 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "sc-7"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "43fe06cf-43be-4d10-a660-f0603f897570"
+          }
+        ]
+      },
+      {
+        "uuid": "51ed79b8-7838-5fa5-995f-05dc8f8ff671",
+        "title": "SC-7(3) Access Points",
+        "description": "44 passed, 0 failed, 3 risk-accepted of 47 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "sc-7.3"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "a2574fe0-ca79-4a75-969b-c8d6817f7452"
+          }
+        ]
+      },
+      {
+        "uuid": "bbad45ca-8355-55f9-ae86-a56778c266af",
+        "title": "SC-7(4) External Telecommunications Services",
+        "description": "74 passed, 1 failed, 3 risk-accepted of 78 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "sc-7.4"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "c18fc4b2-c6c9-4624-8cde-daafdb88eb71"
+          }
+        ],
+        "remarks": "CloudFront.7 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID"
+      },
+      {
+        "uuid": "7ca1d356-351c-53cd-872b-5759ab07a4d9",
+        "title": "SC-8 Transmission Confidentiality and Integrity",
+        "description": "25 passed, 1 failed, 0 risk-accepted of 26 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "sc-8"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "b8a972a1-f2a5-45e2-b409-4449073a0671"
+          }
+        ],
+        "remarks": "CloudFront.7 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID"
+      },
+      {
+        "uuid": "458288ed-0a16-502d-9d9e-97b4e9144bb1",
+        "title": "SC-8(1) Cryptographic Protection",
+        "description": "22 passed, 1 failed, 0 risk-accepted of 23 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "sc-8.1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "f8c8105f-7028-4d8d-93fb-188a75678b15"
+          }
+        ],
+        "remarks": "CloudFront.7 on arn:aws:cloudfront::111122223333:distribution/EXAMPLEDISTID"
+      },
+      {
+        "uuid": "1f95d8c8-70cd-582b-a61c-536d685a47ba",
+        "title": "SI-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "si-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "c3a425bb-0b2b-4eef-b959-7d167fe16231"
+          }
+        ]
+      },
+      {
+        "uuid": "03014867-e190-53c8-b098-edc112295c68",
+        "title": "SI-12 Information Management and Retention",
+        "description": "26 passed, 0 failed, 0 risk-accepted of 26 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "si-12"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "closed"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "closed-on",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-15"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "611665ad-2e2d-423a-b364-40be4ebe107b"
+          }
+        ]
+      },
+      {
+        "uuid": "1b52b092-8448-5a24-97b1-e235ac7f9111",
+        "title": "SI-4 System Monitoring",
+        "description": "8 passed, 6 failed, 1 risk-accepted of 15 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "si-4"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "f25aac06-c6d8-4a90-89cc-8797aa3d058a"
+          }
+        ],
+        "remarks": "S3.11 on arn:aws:s3:::sas-web-111122223333; S3.11 on arn:aws:s3:::sas-evidence-111122223333; S3.11 on arn:aws:s3:::sas-accesslogs-111122223333; GuardDuty.1 on AWS::::Account:111122223333; S3.11 on arn:aws:s3:::sas-data-111122223333; S3.11 on arn:aws:s3:::sas-logs-111122223333"
+      },
+      {
+        "uuid": "db2f9aef-cf8d-516a-81ca-fe6afe85b4a7",
+        "title": "SI-4(2) Automated Tools and Mechanisms for Real-time Analysis",
+        "description": "0 passed, 1 failed, 0 risk-accepted of 1 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "si-4.2"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "3895957f-1ee8-41f5-81ab-a9c4fc54f7fd"
+          }
+        ],
+        "remarks": "GuardDuty.1 on AWS::::Account:111122223333"
+      },
+      {
+        "uuid": "79230c0e-8896-5371-ad59-e80324b8cd05",
+        "title": "SI-4(4) Inbound and Outbound Communications Traffic",
+        "description": "0 passed, 6 failed, 0 risk-accepted of 6 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "si-4.4"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "3ba88de0-ff46-4d33-9f77-80046d4daf7b"
+          }
+        ],
+        "remarks": "S3.11 on arn:aws:s3:::sas-web-111122223333; S3.11 on arn:aws:s3:::sas-evidence-111122223333; S3.11 on arn:aws:s3:::sas-accesslogs-111122223333; GuardDuty.1 on AWS::::Account:111122223333; S3.11 on arn:aws:s3:::sas-data-111122223333; S3.11 on arn:aws:s3:::sas-logs-111122223333"
+      },
+      {
+        "uuid": "3a790f60-cbeb-50aa-b9f5-e7d16ddefb92",
+        "title": "SI-4(5) System-generated Alerts",
+        "description": "3 passed, 1 failed, 0 risk-accepted of 4 Security Hub checks.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "si-4.5"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "0f0dabf1-926b-41d2-a708-299e34da5278"
+          }
+        ],
+        "remarks": "GuardDuty.1 on AWS::::Account:111122223333"
+      },
+      {
+        "uuid": "5fa05d19-7ea5-59ae-bde7-e1be9bb02cc2",
+        "title": "SR-1 Policy and Procedures",
+        "description": "No attestation on file.",
+        "props": [
+          {
+            "name": "control-id",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "sr-1"
+          },
+          {
+            "name": "status",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "open"
+          },
+          {
+            "name": "first-seen",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-11-14"
+          },
+          {
+            "name": "scheduled-completion",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "2026-12-14"
+          },
+          {
+            "name": "latest-finding-uuid",
+            "ns": "https://github.com/joserodriguezthe1/self-audited-rmf/ns",
+            "value": "d694eeb0-272c-4a79-9989-bccfd9092f3b"
+          }
+        ]
+      }
+    ]
+  }
+}

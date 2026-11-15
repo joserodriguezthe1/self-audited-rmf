@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src https://*.amazoncognito.com https://*.execute-api.us-east-1.amazonaws.com; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action https://*.amazoncognito.com">
+<title>SAS Compliance Chat</title>
+<style>
+  :root { --bg:#0e1a2b; --panel:#14243a; --ink:#e8eef7; --muted:#93a4bd; --line:#24384f; --accent:#4fb3ff;
+          --good:#3ecf8e; --bad:#ff6b6b; --warn:#f5b84a; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; background:var(--bg); color:var(--ink);
+         display:flex; flex-direction:column; height:100vh; }
+  header { display:flex; align-items:center; gap:12px; padding:14px 20px; border-bottom:1px solid var(--line); }
+  header h1 { font-size:16px; margin:0; font-weight:600; }
+  header .sub { color:var(--muted); font-size:13px; }
+  header .spacer { flex:1; }
+  button { font:inherit; border:1px solid var(--line); background:var(--panel); color:var(--ink); padding:8px 14px;
+           border-radius:8px; cursor:pointer; }
+  button.primary { background:var(--accent); border-color:var(--accent); color:#05121f; font-weight:600; }
+  button:disabled { opacity:.5; cursor:default; }
+  main { flex:1; overflow-y:auto; padding:20px; }
+  .wrap { max-width:860px; margin:0 auto; }
+  .msg { margin:0 0 16px; padding:12px 16px; border-radius:10px; border:1px solid var(--line); background:var(--panel); }
+  .msg.user { background:transparent; border-style:dashed; color:var(--muted); }
+  .msg .who { font-size:12px; color:var(--muted); margin-bottom:4px; }
+  .msg ul { margin:6px 0; padding-left:20px; }
+  .msg code { background:#0a1422; padding:1px 5px; border-radius:4px; font-size:13px; word-break:break-all; }
+  .tools { margin-top:8px; font-size:12px; color:var(--muted); }
+  .tag { display:inline-block; padding:1px 8px; border-radius:999px; border:1px solid var(--line); margin:2px 4px 0 0; }
+  .s-satisfied { color:var(--good); } .s-not-satisfied { color:var(--bad); } .s-risk-accepted { color:var(--warn); }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 20px; }
+  .chips button { font-size:13px; padding:6px 10px; }
+  footer { border-top:1px solid var(--line); padding:14px 20px; }
+  form { max-width:860px; margin:0 auto; display:flex; gap:10px; }
+  input[type=text] { flex:1; font:inherit; padding:10px 12px; border-radius:8px; border:1px solid var(--line);
+                     background:#0a1422; color:var(--ink); }
+  .center { text-align:center; margin-top:15vh; }
+  .center p { color:var(--muted); max-width:520px; margin:12px auto 24px; }
+  .err { color:var(--bad); }
+</style>
+</head>
+<body>
+<header>
+  <h1>SAS Compliance Chat</h1>
+  <span class="sub">NIST SP 800-53 Rev 5 Moderate, live evidence</span>
+  <span class="spacer"></span>
+  <span class="sub" id="who"></span>
+  <button id="signout" hidden>Sign out</button>
+</header>
+<main><div class="wrap" id="log"></div></main>
+<footer id="composer" hidden>
+  <form id="ask">
+    <input type="text" id="q" placeholder="Ask about any control, e.g. Is SC-28 satisfied?" autocomplete="off" maxlength="2000">
+    <button class="primary" id="send">Ask</button>
+  </form>
+</footer>
+
+<script src="config.js"></script>
+<script>
+(() => {
+  const C = window.SAS_CONFIG;
+  const $ = (id) => document.getElementById(id);
+  const log = $("log");
+  let idToken = null, history = [];
+
+  // ---------- storage (sessionStorage can throw in some contexts) ----------
+  const store = {
+    get(k) { try { return sessionStorage.getItem(k); } catch { return null; } },
+    set(k, v) { try { sessionStorage.setItem(k, v); } catch {} },
+    del(k) { try { sessionStorage.removeItem(k); } catch {} },
+  };
+
+  // ---------- PKCE helpers ----------
+  const b64url = (buf) => btoa(String.fromCharCode(...new Uint8Array(buf)))
+    .replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  const randomString = (n = 64) => b64url(crypto.getRandomValues(new Uint8Array(n))).slice(0, n);
+  const sha256 = (s) => crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
+
+  async function signIn() {
+    const verifier = randomString(64), state = randomString(24);
+    store.set("pkce_verifier", verifier); store.set("pkce_state", state);
+    const challenge = b64url(await sha256(verifier));
+    const p = new URLSearchParams({ response_type: "code", client_id: C.clientId, redirect_uri: C.redirectUri,
+      scope: "openid email", code_challenge_method: "S256", code_challenge: challenge, state });
+    location.assign(`${C.cognitoDomain}/oauth2/authorize?${p}`);
+  }
+
+  async function exchangeCode(code, state) {
+    if (state !== store.get("pkce_state")) throw new Error("Sign-in state did not match. Try again.");
+    const body = new URLSearchParams({ grant_type: "authorization_code", client_id: C.clientId, code,
+      redirect_uri: C.redirectUri, code_verifier: store.get("pkce_verifier") || "" });
+    const r = await fetch(`${C.cognitoDomain}/oauth2/token`, { method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" }, body });
+    if (!r.ok) throw new Error(`Token exchange failed (${r.status}).`);
+    const t = await r.json();
+    store.del("pkce_verifier"); store.del("pkce_state");
+    return t.id_token;
+  }
+
+  function claims(jwt) {
+    try { return JSON.parse(atob(jwt.split(".")[1].replace(/-/g, "+").replace(/_/g, "/"))); } catch { return {}; }
+  }
+
+  function signOut() {
+    store.del("id_token");
+    const p = new URLSearchParams({ client_id: C.clientId, logout_uri: C.redirectUri });
+    location.assign(`${C.cognitoDomain}/logout?${p}`);
+  }
+
+  // ---------- rendering ----------
+  const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+  function md(text) {
+    const lines = esc(text).split("\n");
+    let html = "", inList = false;
+    for (let line of lines) {
+      line = line.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/`([^`]+)`/g, "<code>$1</code>")
+                 .replace(/\b(?:not-satisfied|risk-accepted)\b|(?<!not )\bsatisfied\b/g, (m) => `<span class="s-${m}">${m}</span>`);
+      const li = line.match(/^\s*(?:[-*]|\d+\.)\s+(.*)$/);
+      if (li) { if (!inList) { html += "<ul>"; inList = true; } html += `<li>${li[1]}</li>`; continue; }
+      if (inList) { html += "</ul>"; inList = false; }
+      html += line.trim() ? `<div>${line.replace(/^#+\s*/, "")}</div>` : "<div>&nbsp;</div>";
+    }
+    return html + (inList ? "</ul>" : "");
+  }
+  function add(role, html, extra = "") {
+    const d = document.createElement("div");
+    d.className = `msg ${role}`;
+    d.innerHTML = `<div class="who">${role === "user" ? "You" : "SAS"}</div>${html}${extra}`;
+    log.appendChild(d); d.scrollIntoView({ behavior: "smooth", block: "end" });
+    return d;
+  }
+
+  // ---------- chat ----------
+  async function ask(question) {
+    add("user", esc(question));
+    const pending = add("assistant", "<div class='sub'>Checking evidence...</div>");
+    $("send").disabled = true;
+    try {
+      const r = await fetch(`${C.apiUrl}/chat`, { method: "POST",
+        headers: { "Content-Type": "application/json", "Authorization": `Bearer ${idToken}` },
+        body: JSON.stringify({ question, history }) });
+      if (r.status === 401) { store.del("id_token"); throw new Error("Session expired. Sign in again."); }
+      if (r.status === 503 || r.status === 504) throw new Error("The question took too long. Try a narrower one.");
+      if (!r.ok) throw new Error(`Request failed (${r.status}).`);
+      const data = await r.json();
+      history = data.history || [];
+      const tools = (data.tool_calls || []).map((c) =>
+        `<span class="tag">${esc(c.tool)}${c.input && c.input.control_id ? " " + esc(c.input.control_id) : ""}</span>`).join("");
+      pending.innerHTML = `<div class="who">SAS</div>${md(data.answer || "")}` +
+        (tools ? `<div class="tools">Evidence tools used: ${tools}</div>` : "");
+    } catch (e) {
+      pending.innerHTML = `<div class="who">SAS</div><div class="err">${esc(e.message)}</div>`;
+    } finally { $("send").disabled = false; $("q").focus(); }
+  }
+
+  function showSignedOut(msg = "") {
+    log.innerHTML = `<div class="center"><h2>Self-Audited System</h2>
+      <p>Ask about any NIST SP 800-53 Rev 5 Moderate control. Every answer cites its OSCAL finding and a hash-verified evidence file.</p>
+      ${msg ? `<p class="err">${esc(msg)}</p>` : ""}<button class="primary" id="signin">Sign in</button></div>`;
+    $("signin").onclick = signIn;
+  }
+
+  function showSignedIn() {
+    const c = claims(idToken);
+    $("who").textContent = c.email || "";
+    $("signout").hidden = false; $("composer").hidden = false;
+    log.innerHTML = "";
+    add("assistant", md("Signed in. Ask about a control, a family, or the overall status."),
+      `<div class="chips">${["Give me a summary of our compliance status",
+        "Is SC-28 satisfied? Show the evidence and verify the hash.",
+        "Which AU controls are not satisfied?",
+        "Which controls are risk-accepted, and why?",
+        "What does IA-2(1) require and where do we stand?"]
+        .map((s) => `<button type="button" data-q="${esc(s)}">${esc(s)}</button>`).join("")}</div>`);
+    log.querySelectorAll("[data-q]").forEach((b) => b.onclick = () => ask(b.dataset.q));
+    $("q").focus();
+  }
+
+  // ---------- boot ----------
+  $("signout").onclick = signOut;
+  $("ask").onsubmit = (e) => { e.preventDefault(); const q = $("q").value.trim(); if (q) { $("q").value = ""; ask(q); } };
+
+  (async () => {
+    const params = new URLSearchParams(location.search);
+    try {
+      if (params.get("code")) {
+        idToken = await exchangeCode(params.get("code"), params.get("state"));
+        store.set("id_token", idToken);
+        history = [];
+        window.history.replaceState({}, "", C.redirectUri);
+      } else {
+        idToken = store.get("id_token");
+      }
+      if (idToken && (claims(idToken).exp || 0) * 1000 > Date.now()) showSignedIn();
+      else { store.del("id_token"); idToken = null; showSignedOut(); }
+    } catch (e) { showSignedOut(e.message); }
+  })();
+})();
+</script>
+</body>
+</html>

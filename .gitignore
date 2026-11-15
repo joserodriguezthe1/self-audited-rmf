@@ -1,0 +1,23 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan*
+terraform/.build/
+terraform/terraform.tfvars
+terraform/discovered.auto.tfvars.json
+terraform/imports.tf
+terraform/backend.hcl
+crash.log
+
+# Python
+__pycache__/
+.venv/
+.pytest_cache/
+
+# Local notes and secrets
+.env
+build-notes.md
+*.zip
+web/config.js

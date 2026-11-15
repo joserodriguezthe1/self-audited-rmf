@@ -1,0 +1,79 @@
+{
+  "assessment-plan": {
+    "uuid": "7847b02a-3f0b-55ab-a74f-1e07d16c8fde",
+    "metadata": {
+      "title": "SAS Automated Assessment Plan",
+      "last-modified": "2026-11-15T00:00:00+00:00",
+      "version": "1.0.0",
+      "oscal-version": "1.1.3",
+      "roles": [
+        {
+          "id": "system-owner",
+          "title": "System Owner"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "541d2f1f-47a4-5286-aad0-b8b659d2f52b",
+          "type": "person",
+          "name": "Jose Rodriguez"
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "system-owner",
+          "party-uuids": [
+            "541d2f1f-47a4-5286-aad0-b8b659d2f52b"
+          ]
+        }
+      ]
+    },
+    "import-ssp": {
+      "href": "../ssp/sas-ssp.json"
+    },
+    "local-definitions": {
+      "activities": [
+        {
+          "uuid": "592bbc4d-59af-5c4d-8e70-f2ffcd5e8454",
+          "title": "Automated configuration testing",
+          "description": "Security Hub CSPM NIST SP 800-53 Rev 5 checks, collected daily by sas-evidence-pipeline.",
+          "props": [
+            {
+              "name": "method",
+              "value": "TEST"
+            }
+          ]
+        },
+        {
+          "uuid": "336fa17a-1047-5747-9b96-cdff91114251",
+          "title": "Policy attestation review",
+          "description": "Examine attestation records for xx-1 controls; reviews older than 365 days fail.",
+          "props": [
+            {
+              "name": "method",
+              "value": "EXAMINE"
+            }
+          ]
+        },
+        {
+          "uuid": "10aa768c-247a-545e-aa82-dd2ab9f99efb",
+          "title": "Pre-deployment policy checks",
+          "description": "Checkov and SAS Rego rules evaluate Terraform in CI before any change deploys.",
+          "props": [
+            {
+              "name": "method",
+              "value": "TEST"
+            }
+          ]
+        }
+      ]
+    },
+    "reviewed-controls": {
+      "control-selections": [
+        {
+          "include-all": {}
+        }
+      ]
+    }
+  }
+}

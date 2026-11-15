@@ -1,0 +1,16 @@
+{
+  "_readme": "How each NIST SP 800-53 Rev 5 Moderate control gets its evidence. Precedence: controls > policy_controls (any xx-1) > family_defaults > automatic. Automatic means Security Hub CSPM findings if any check maps to the control, otherwise not-assessed (manual).",
+  "policy_controls": {
+    "source": "attestation",
+    "reason": "Policy and procedures control. Evidence is a reviewed policy document recorded in attestations/<control-id>.json."
+  },
+  "family_defaults": {
+    "pe": { "source": "inherited", "provider": "AWS", "reason": "Physical and environmental protection is provided by AWS data centers (AWS FedRAMP package)." }
+  },
+  "controls": {
+    "pe-1": { "source": "attestation" },
+    "ma-2": { "source": "inherited", "provider": "AWS" },
+    "ma-5": { "source": "inherited", "provider": "AWS" },
+    "mp-6": { "source": "inherited", "provider": "AWS" }
+  }
+}

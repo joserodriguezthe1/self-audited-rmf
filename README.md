@@ -124,4 +124,4 @@ SC-8: CloudFront "web" must force HTTPS
 
 Built on AWS Free Tier credits. The ongoing costs are Security Hub checks, Config items, one KMS key, and Bedrock tokens (Claude Haiku). With 30 or so resources, that comes to a few dollars a month.
 
-The system ran for a weekend and was then torn down with [`scripts/teardown.sh`](scripts/teardown.sh), leaving the account with no ongoing charges. The [teardown runbook](docs/teardown.md) records the steps and the problems hit on the first run.
+The system ran for five days, from Veterans Day through the following Sunday, and was then torn down with [`scripts/teardown.sh`](scripts/teardown.sh), leaving the account with no ongoing charges. The [teardown runbook](docs/teardown.md) records the steps and the problems hit on the first run.
